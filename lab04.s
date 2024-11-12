@@ -40,6 +40,10 @@ ret_strcmp:
             srli a0, t2, 31  # get the sign bit. If 1, negative, so strictly less
             xori a0, a0, 1 # Invert it. So a0 is 1 if greater or equal.
             jr   ra
+#---------
+# Write the subroutine code here
+#  You may move jr ra   if you wish.
+#---------
  
 # ----------------------------------------------------------------------------
 # recCheck(array, size)
@@ -74,3 +78,7 @@ return:
             lw   ra, 8(sp)
             addi sp, sp,   12
             jr   ra
+#---------
+# Write the subroutine code here
+#  You may move jr ra   if you wish.
+#---------
